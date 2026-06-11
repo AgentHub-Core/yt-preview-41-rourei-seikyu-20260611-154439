@@ -67,6 +67,43 @@
       margin-top: 16px;
       line-height: 1.5;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .image-card {
+      border: 3px solid #111;
+      background: #fff;
+    }
+    .image-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 3px solid #111;
+    }
+    .image-card figcaption {
+      padding: 14px;
+    }
+    .scene-title {
+      font-size: clamp(18px, 2.6vw, 26px);
+      line-height: 1.35;
+      font-weight: 900;
+      margin: 0 0 8px;
+    }
+    .scene-copy {
+      font-size: clamp(15px, 2vw, 20px);
+      line-height: 1.55;
+      margin: 0;
+      color: #242a31;
+    }
+    .image-note {
+      font-size: clamp(16px, 2.2vw, 22px);
+      line-height: 1.6;
+      margin: 10px 0 0;
+    }
     ul {
       font-size: clamp(18px, 2.4vw, 24px);
       line-height: 1.6;
@@ -82,9 +119,53 @@
       <p class="hook">「65歳なら自動で入る」と思っていた。</p>
       <p class="note">
         40番の作り直し版を参考に、0秒で年金相談窓口のクライマックスから始める約6分台本です。
-        画像、音声、MP4はまだ作っていません。
+        初回確認用の画像4枚を追加しました。音声、MP4はまだ作っていません。
       </p>
       <a class="script-link" href="script.md">台本を読む</a>
+    </section>
+    <section class="panel">
+      <h2>初回生成画像 4枚</h2>
+      <p class="image-note">
+        通常の内蔵画像生成ツールで作った確認用カットです。app-serverは使っていません。
+      </p>
+      <div class="gallery">
+        <figure class="image-card">
+          <a href="images/initial_builtin_v1/s01_pension_counter_climax.png">
+            <img src="images/initial_builtin_v1/s01_pension_counter_climax.png" alt="S01 年金相談窓口 クライマックス">
+          </a>
+          <figcaption>
+            <p class="scene-title">S01 年金相談窓口</p>
+            <p class="scene-copy">年金が消えるのか。 / 5年を過ぎた分は注意です。 / 請求がいるのか。</p>
+          </figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/initial_builtin_v1/s02_envelope_at_home.png">
+            <img src="images/initial_builtin_v1/s02_envelope_at_home.png" alt="S02 五年前 郵便受けの封筒">
+          </a>
+          <figcaption>
+            <p class="scene-title">S02 五年前の封筒</p>
+            <p class="scene-copy">大事な封筒みたいよ。 / 65歳なら自動だろ。 / 開けてみようよ。</p>
+          </figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/initial_builtin_v1/s03_factory_still_needed.png">
+            <img src="images/initial_builtin_v1/s03_factory_still_needed.png" alt="S03 工場 まだ必要とされる男">
+          </a>
+          <figcaption>
+            <p class="scene-title">S03 町工場</p>
+            <p class="scene-copy">もう一年だけお願いします。 / 俺はまだ働ける。 / 年金は後でいい。</p>
+          </figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/initial_builtin_v1/s05_yakitori_friend_warning.png">
+            <img src="images/initial_builtin_v1/s05_yakitori_friend_warning.png" alt="S05 焼き鳥屋 同級生の忠告">
+          </a>
+          <figcaption>
+            <p class="scene-title">S05 焼き鳥屋</p>
+            <p class="scene-copy">年金請求書、出したか？ / 辞めてからでいい。 / 放置とくり下げは違う。</p>
+          </figcaption>
+        </figure>
+      </div>
     </section>
     <section class="panel">
       <h2>確認ポイント</h2>
@@ -96,7 +177,7 @@
       </ul>
     </section>
     <p class="meta">
-      現在の状態: 台本 v1 / 動画未生成 / 画像未生成<br>
+      現在の状態: 台本 v1 / 初回画像4枚生成済み / 動画未生成<br>
       更新日: 2026-06-11
     </p>
   </main>
