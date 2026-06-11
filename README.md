@@ -1,9 +1,9 @@
 # YouTube Script Preview 41
 
-Temporary GitHub Pages preview for reviewing the script and initial generated images before TTS and render work.
+Temporary GitHub Pages preview for reviewing the finished video, script, subtitles, and generated images.
 
-- `index.html`: script preview landing page
+- `index.html`: video preview landing page
 - `script.md`: current script for review
-- `images/initial_builtin_v1/`: first four generated image cuts for review
-
-No MP4 is included yet.
+- `downloads/`: finished MP4 and SRT
+- `images/final_story_v1/`: final 12 generated image cuts
+- `snapshots/`: subtitle band verification sheet

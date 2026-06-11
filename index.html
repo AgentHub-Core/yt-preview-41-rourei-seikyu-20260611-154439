@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>台本プレビュー 41 老齢年金請求書5年時効</title>
+  <title>41 老齢年金請求書5年時効 最終動画プレビュー</title>
   <style>
     :root {
       color-scheme: light;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f4f6f8;
+      background: #eef1f4;
       color: #121417;
     }
     body {
@@ -16,7 +16,7 @@
       padding: 24px;
     }
     main {
-      max-width: 1080px;
+      max-width: 1180px;
       margin: 0 auto;
     }
     h1 {
@@ -24,14 +24,19 @@
       line-height: 1.25;
       margin: 0 0 16px;
     }
+    h2 {
+      font-size: clamp(22px, 3vw, 34px);
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
     .status {
       display: inline-block;
       background: #111;
       color: #fff;
-      font-size: clamp(18px, 3vw, 28px);
+      font-size: clamp(17px, 2.5vw, 24px);
       font-weight: 800;
-      padding: 10px 16px;
-      margin: 0 0 18px;
+      padding: 9px 14px;
+      margin: 0 0 16px;
     }
     .panel {
       background: #fff;
@@ -39,33 +44,63 @@
       padding: 20px;
       margin-top: 18px;
     }
-    .hook {
-      font-size: clamp(24px, 4vw, 44px);
-      line-height: 1.25;
-      font-weight: 900;
-      margin: 0 0 14px;
-    }
-    .note {
-      font-size: clamp(18px, 2.5vw, 26px);
-      line-height: 1.65;
+    .lead {
+      font-size: clamp(18px, 2.3vw, 25px);
+      line-height: 1.6;
       margin: 0;
     }
-    .script-link {
+    .video-frame {
+      width: 100%;
+      margin-top: 16px;
+      background: #111;
+      border: 3px solid #111;
+    }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #111;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .button {
       display: inline-block;
-      margin-top: 22px;
       background: #ffd21f;
       color: #111;
-      font-size: clamp(20px, 3vw, 30px);
+      font-size: clamp(16px, 2.2vw, 22px);
       font-weight: 900;
-      padding: 12px 18px;
+      padding: 10px 14px;
       text-decoration: none;
       border: 3px solid #111;
     }
-    .meta {
-      font-size: clamp(15px, 2vw, 20px);
-      color: #434a53;
+    .button.secondary {
+      background: #fff;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
       margin-top: 16px;
-      line-height: 1.5;
+    }
+    .stat {
+      border: 2px solid #111;
+      padding: 12px;
+      background: #f8fafc;
+    }
+    .stat b {
+      display: block;
+      font-size: clamp(17px, 2vw, 21px);
+      margin-bottom: 4px;
+    }
+    .stat span {
+      display: block;
+      font-size: clamp(15px, 1.8vw, 18px);
+      line-height: 1.45;
+      color: #303741;
     }
     .gallery {
       display: grid;
@@ -76,108 +111,138 @@
     .image-card {
       border: 3px solid #111;
       background: #fff;
+      margin: 0;
     }
-    .image-card img {
+    .image-card img,
+    .wide-image {
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-bottom: 3px solid #111;
     }
+    .wide-image {
+      border: 3px solid #111;
+      margin-top: 14px;
+    }
     .image-card figcaption {
-      padding: 14px;
+      padding: 12px 14px;
     }
     .scene-title {
-      font-size: clamp(18px, 2.6vw, 26px);
+      font-size: clamp(17px, 2.3vw, 23px);
       line-height: 1.35;
       font-weight: 900;
-      margin: 0 0 8px;
+      margin: 0 0 6px;
     }
-    .scene-copy {
-      font-size: clamp(15px, 2vw, 20px);
+    .scene-copy,
+    .meta {
+      font-size: clamp(14px, 1.8vw, 18px);
       line-height: 1.55;
       margin: 0;
-      color: #242a31;
+      color: #303741;
     }
-    .image-note {
-      font-size: clamp(16px, 2.2vw, 22px);
-      line-height: 1.6;
-      margin: 10px 0 0;
-    }
-    ul {
-      font-size: clamp(18px, 2.4vw, 24px);
-      line-height: 1.6;
-      padding-left: 1.4em;
+    .meta {
+      margin-top: 18px;
     }
   </style>
 </head>
 <body>
   <main>
-    <p class="status">台本確認用</p>
+    <p class="status">最終動画プレビュー</p>
     <h1>41 老齢年金請求書5年時効</h1>
+
     <section class="panel">
-      <p class="hook">「65歳なら自動で入る」と思っていた。</p>
-      <p class="note">
-        40番の作り直し版を参考に、0秒で年金相談窓口のクライマックスから始める約6分台本です。
-        初回確認用の画像4枚を追加しました。音声、MP4はまだ作っていません。
-      </p>
-      <a class="script-link" href="script.md">台本を読む</a>
+      <h2>動画プレビュー</h2>
+      <p class="lead">字幕入り、BGM入り、音量調整済みの最終確認版です。尺は9分59秒です。</p>
+      <div class="video-frame">
+        <video controls preload="metadata" src="downloads/41_rourei_nenkin_seikyu_final_with_subtitles_loudness_normalized.mp4"></video>
+      </div>
+      <div class="links">
+        <a class="button" href="downloads/41_rourei_nenkin_seikyu_final_with_subtitles_loudness_normalized.mp4">MP4を開く</a>
+        <a class="button secondary" href="script.md">台本を読む</a>
+        <a class="button secondary" href="downloads/41_rourei_nenkin_seikyu_subtitles.srt">字幕SRT</a>
+      </div>
     </section>
+
     <section class="panel">
-      <h2>初回生成画像 4枚</h2>
-      <p class="image-note">
-        通常の内蔵画像生成ツールで作った確認用カットです。app-serverは使っていません。
-      </p>
+      <h2>仕上げ確認</h2>
+      <div class="stats">
+        <div class="stat">
+          <b>字幕帯</b>
+          <span>高さ92px。文字サイズ58px。字幕表示中だけ下部に表示。</span>
+        </div>
+        <div class="stat">
+          <b>音量</b>
+          <span>最終MP4: -16.02 LUFS / -1.44 dBTP。</span>
+        </div>
+        <div class="stat">
+          <b>セリフ音量</b>
+          <span>96セリフを調整。レンダー後のばらつきは0.31 LUFS。</span>
+        </div>
+        <div class="stat">
+          <b>間</b>
+          <span>セリフ間の最大ギャップ0.47秒。1秒超の空白なし。</span>
+        </div>
+      </div>
+      <img class="wide-image" src="snapshots/final_subtitle_band_contact_sheet.png" alt="字幕帯確認用の動画フレーム一覧">
+    </section>
+
+    <section class="panel">
+      <h2>完成画像 12枚</h2>
       <div class="gallery">
         <figure class="image-card">
-          <a href="images/initial_builtin_v1/s01_pension_counter_climax.png">
-            <img src="images/initial_builtin_v1/s01_pension_counter_climax.png" alt="S01 年金相談窓口 クライマックス">
-          </a>
-          <figcaption>
-            <p class="scene-title">S01 年金相談窓口</p>
-            <p class="scene-copy">年金が消えるのか。 / 5年を過ぎた分は注意です。 / 請求がいるのか。</p>
-          </figcaption>
+          <a href="images/final_story_v1/S01.png"><img src="images/final_story_v1/S01.png" alt="S01 年金相談窓口"></a>
+          <figcaption><p class="scene-title">S01 年金相談窓口</p><p class="scene-copy">請求がいるのか。年金が消えるのか。</p></figcaption>
         </figure>
         <figure class="image-card">
-          <a href="images/initial_builtin_v1/s02_envelope_at_home.png">
-            <img src="images/initial_builtin_v1/s02_envelope_at_home.png" alt="S02 五年前 郵便受けの封筒">
-          </a>
-          <figcaption>
-            <p class="scene-title">S02 五年前の封筒</p>
-            <p class="scene-copy">大事な封筒みたいよ。 / 65歳なら自動だろ。 / 開けてみようよ。</p>
-          </figcaption>
+          <a href="images/final_story_v1/S02.png"><img src="images/final_story_v1/S02.png" alt="S02 五年前の封筒"></a>
+          <figcaption><p class="scene-title">S02 五年前の封筒</p><p class="scene-copy">65歳なら自動だと思っていた日。</p></figcaption>
         </figure>
         <figure class="image-card">
-          <a href="images/initial_builtin_v1/s03_factory_still_needed.png">
-            <img src="images/initial_builtin_v1/s03_factory_still_needed.png" alt="S03 工場 まだ必要とされる男">
-          </a>
-          <figcaption>
-            <p class="scene-title">S03 町工場</p>
-            <p class="scene-copy">もう一年だけお願いします。 / 俺はまだ働ける。 / 年金は後でいい。</p>
-          </figcaption>
+          <a href="images/final_story_v1/S03.png"><img src="images/final_story_v1/S03.png" alt="S03 工場"></a>
+          <figcaption><p class="scene-title">S03 工場</p><p class="scene-copy">まだ働ける。年金は後でいい。</p></figcaption>
         </figure>
         <figure class="image-card">
-          <a href="images/initial_builtin_v1/s05_yakitori_friend_warning.png">
-            <img src="images/initial_builtin_v1/s05_yakitori_friend_warning.png" alt="S05 焼き鳥屋 同級生の忠告">
-          </a>
-          <figcaption>
-            <p class="scene-title">S05 焼き鳥屋</p>
-            <p class="scene-copy">年金請求書、出したか？ / 辞めてからでいい。 / 放置とくり下げは違う。</p>
-          </figcaption>
+          <a href="images/final_story_v1/S04.png"><img src="images/final_story_v1/S04.png" alt="S04 夜の台所"></a>
+          <figcaption><p class="scene-title">S04 夜の台所</p><p class="scene-copy">封筒を開けないまま、時間だけが過ぎる。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S05.png"><img src="images/final_story_v1/S05.png" alt="S05 焼き鳥屋"></a>
+          <figcaption><p class="scene-title">S05 焼き鳥屋</p><p class="scene-copy">放置とくり下げは違う。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S06.png"><img src="images/final_story_v1/S06.png" alt="S06 娘の確認"></a>
+          <figcaption><p class="scene-title">S06 娘の確認</p><p class="scene-copy">可愛いけれど、しっかり確認する娘。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S07.png"><img src="images/final_story_v1/S07.png" alt="S07 相談窓口の図解"></a>
+          <figcaption><p class="scene-title">S07 相談窓口の図解</p><p class="scene-copy">65歳、請求、受け取りの流れ。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S08.png"><img src="images/final_story_v1/S08.png" alt="S08 相談窓口の確認"></a>
+          <figcaption><p class="scene-title">S08 相談窓口の確認</p><p class="scene-copy">加入記録と手続きを確認する。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S09.png"><img src="images/final_story_v1/S09.png" alt="S09 家族会議"></a>
+          <figcaption><p class="scene-title">S09 家族会議</p><p class="scene-copy">封筒を開ける。記録を見る。予約する。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S10.png"><img src="images/final_story_v1/S10.png" alt="S10 自宅で開封"></a>
+          <figcaption><p class="scene-title">S10 自宅で開封</p><p class="scene-copy">今日、開ける。後にしない。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S11.png"><img src="images/final_story_v1/S11.png" alt="S11 台所の会話"></a>
+          <figcaption><p class="scene-title">S11 台所の会話</p><p class="scene-copy">桜のころに行きたい。</p></figcaption>
+        </figure>
+        <figure class="image-card">
+          <a href="images/final_story_v1/S12.png"><img src="images/final_story_v1/S12.png" alt="S12 最後のチェックリスト"></a>
+          <figcaption><p class="scene-title">S12 最後のチェックリスト</p><p class="scene-copy">請求書、記録、予約。今日確認する。</p></figcaption>
         </figure>
       </div>
     </section>
-    <section class="panel">
-      <h2>確認ポイント</h2>
-      <ul>
-        <li>冒頭15秒以内に「自動ではない」「5年時効」が伝わるか</li>
-        <li>「5年で全部消える」と誤解させない表現になっているか</li>
-        <li>繰下げ受給と封筒放置を混同させていないか</li>
-        <li>最後に「封筒を開ける」「記録を見る」「予約する」行動へ落ちるか</li>
-      </ul>
-    </section>
+
     <p class="meta">
-      現在の状態: 台本 v1 / 初回画像4枚生成済み / 動画未生成<br>
+      状態: 画像12枚 / 字幕入りMP4 / SRT / 台本 / GitHub Pages確認用<br>
       更新日: 2026-06-11
     </p>
   </main>
